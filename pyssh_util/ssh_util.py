@@ -26,7 +26,7 @@ class SSHClient:
         self.client.connect(self.host, port=self.port, username=self.username, password=self.password, allow_agent=False, look_for_keys=False, gss_auth=False)
 
     def execute_command(self, command):
-        logging.info(f"即将执行命令: {command}")
+        logging.info(f"正在执行命令: {command}")
         stdin, stdout, stderr = self.client.exec_command(command)
         output = stdout.read().decode('utf-8')
         error = stderr.read().decode('utf-8')
