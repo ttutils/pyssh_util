@@ -11,7 +11,7 @@ with io.open("requirements.txt", 'r') as f:
 
 setup(
     name='pyssh_util',
-    version='v1.0.2',
+    version='v1.0.3',
     description='ssh助手',
     author='buyfakett',
     author_email='buyfakett@vip.qq.com',
